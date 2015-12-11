@@ -1,0 +1,59 @@
+﻿<Window x:Class="Tetris_WPF_B2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="570" Width="525"
+        KeyDown="HandleKeyDown"
+        Initialized="MainWindow_Initialize" Background="#616161">
+    <DockPanel LastChildFill="True">
+
+        <StackPanel DockPanel.Dock="Right" Width="219">
+            <Label Content="Score :" Height="52" x:Name="titre" FontSize="26" FontWeight="Bold"/>
+            <Label Content="Label" Height="56" x:Name="Score" FontSize="24" />
+            <Label Content="Lines :" Height="56" x:Name="titre1" FontSize="28" FontWeight="Bold"/>
+            <Label Content="Label" Height="56" x:Name="Lignes" FontSize="24"/>
+            <Grid HorizontalAlignment="Left" Height="92" Width="93" Margin="50,50,0,0">
+                <Grid.Background>
+                    <ImageBrush ImageSource="Images/logo_tetris_vbig.png" Stretch="Uniform"/>
+                </Grid.Background>
+            </Grid>
+            <TextBlock HorizontalAlignment="Left" Height="64" Margin="0,120,0,0" TextWrapping="Wrap" Text="Press Escape to (re)start the game   Press Space to pause the game" FontSize="13" Width="206"/>
+        </StackPanel>        
+        <Grid Name="MainGrid" Height="500" Width="250" Margin="0,24,0,16" >
+            <Grid.Background>
+                <ImageBrush ImageSource="Images/333857.jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+    </DockPanel>
+</Window>
